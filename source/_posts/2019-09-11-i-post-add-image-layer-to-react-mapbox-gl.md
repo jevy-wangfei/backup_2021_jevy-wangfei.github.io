@@ -3,6 +3,7 @@ title: Add an image layer to react mapbox gl
 dd: image-layer-to-react-mapbox-gl
 category: timeline
 tags: article
+image: img/mapbox.png
 ---
 
 Images could be added to mapbox using a `Layer` and a `Source` component.

@@ -3,6 +3,7 @@ title: Package AWS Lambda function
 dd: packageawslambda
 category: timeline
 tags: article
+image: img/lambda.png
 ---
 
 - Install/start Docker 

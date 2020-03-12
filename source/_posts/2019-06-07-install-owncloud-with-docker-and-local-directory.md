@@ -8,6 +8,7 @@ tags:
 - docker
 - container
 - local mount storage
+- image: img/owncloud.png
 ---
 
 I was struggled on installing owncloud barely on ubuntu 18, and spent hours on install and config its dependencies, but failed on database script execution. 

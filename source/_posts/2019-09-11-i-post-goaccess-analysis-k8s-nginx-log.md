@@ -3,6 +3,7 @@ title: IP Camera BAT 310 Hacking
 dd: ipcamerabat310
 category: timeline
 tags: article
+image: img/GoAccess-logo.png
 ---
 
 ## Software

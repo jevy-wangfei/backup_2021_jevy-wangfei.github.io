@@ -2,6 +2,7 @@
 title: Translante IDL script to python
 category: timeline
 tags: article
+image: img/idl_to_python.png
 ---
 
 ## IDL programming language

@@ -2,6 +2,7 @@
 title: Parse URL params using API Gateway and lambda
 category: timeline
 tags: article
+image: img/lambda.png
 ---
 
 ## Lambda script

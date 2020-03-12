@@ -3,6 +3,7 @@ title: IP Camera BAT 310 Hacking
 dd: ipcamerabat310
 category: timeline
 tags: article
+image: img/solar_wifi_ip_camera.jpg
 ---
 
 Got a Solar WiFi IP camera from <a href="https://www.ebay.com.au/itm/302918525683?ul_noapp=true">Wireless Solar IP67 Security Camera System Outdoor Home Cam 1080P 2MP</a>
