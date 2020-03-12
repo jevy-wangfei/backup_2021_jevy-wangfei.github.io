@@ -248,6 +248,31 @@
   </entry>
   
   <entry>
+    <title>Read H264 livestream using ffmpeg and cv2</title>
+    <link href="https://jevy.wang/post/2019-02-28-i-post-read-h264-livestream.html"/>
+    <id>https://jevy.wang/post/2019-02-28-i-post-read-h264-livestream.html</id>
+    <published>2020-03-12T05:13:24.378Z</published>
+    <updated>2020-03-12T05:32:40.293Z</updated>
+    
+    <content type="html"><![CDATA[<p>Got a Solar WiFi IP camera from <a href="https://www.ebay.com.au/itm/302918525683?ul_noapp=true" target="_blank" rel="noopener">Wireless Solar IP67 Security Camera System Outdoor Home Cam 1080P 2MP</a></p><p>Wondering to capture video or images from the camera using script/program. </p><p><code>ffmpeg -re -i &quot;http://host ip:81/livestream.cgi?user=admin&amp;pwd=&amp;streamid=0&quot; -c copy -f mpegts test.mp4</code></p><p><code>ffmpeg  -i &quot;http://host ip:81/livestream.cgi?user=admin&amp;pwd=a123&amp;streamid=0&quot; -c copy -f mpegts -ss 5 -frames:v 5 testt.png</code></p><p>FFMPEG is not portable, another way of using cv2 to capture a picture:<br>(ref <a href="https://stackoverflow.com/questions/28477600/not-able-to-play-h264-video-on-opencv" target="_blank" rel="noopener">Not able to play .h264 video on OpenCV?</a>)</p><pre><code class="python">cap = cv2.VideoCapture(<span class="string">'http://host:81/livestream.cgi?user=admin&amp;pwd=&amp;streamid=0'</span>)        <span class="keyword">while</span>(cap.isOpened()):            ret, frame = cap.read()            <span class="comment"># write to local file</span>            cv2.imwrite(<span class="string">"capture.png"</span>,frame)            <span class="comment"># create memory file object save to AWS S3</span>            <span class="comment">#img_data = io.BytesIO(cv2.imencode('.png', frame)[1])</span>            <span class="keyword">break</span>        cap.release()</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Got a Solar WiFi IP camera from &lt;a href=&quot;https://www.ebay.com.au/itm/302918525683?ul_noapp=true&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Wireless 
+      
+    
+    </summary>
+    
+      <category term="timeline" scheme="https://jevy.wang/categories/timeline/"/>
+    
+    
+      <category term="article" scheme="https://jevy.wang/tags/article/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Package AWS Lambda function</title>
     <link href="https://jevy.wang/post/2019-02-28-i-post-package-aws-lambda.html"/>
     <id>https://jevy.wang/post/2019-02-28-i-post-package-aws-lambda.html</id>
@@ -265,31 +290,6 @@
 &lt;li&gt;Install python3&lt;/li&gt;
 &lt;li&gt;Install nodejs (npm included)&lt;/li&gt;
 &lt;li&gt;Install serverless: npm install -g s
-      
-    
-    </summary>
-    
-      <category term="timeline" scheme="https://jevy.wang/categories/timeline/"/>
-    
-    
-      <category term="article" scheme="https://jevy.wang/tags/article/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Read H264 livestream using ffmpeg and cv2</title>
-    <link href="https://jevy.wang/post/2019-02-28-i-post-read-h264-livestream.html"/>
-    <id>https://jevy.wang/post/2019-02-28-i-post-read-h264-livestream.html</id>
-    <published>2020-03-12T05:13:24.378Z</published>
-    <updated>2020-03-12T05:32:40.293Z</updated>
-    
-    <content type="html"><![CDATA[<p>Got a Solar WiFi IP camera from <a href="https://www.ebay.com.au/itm/302918525683?ul_noapp=true" target="_blank" rel="noopener">Wireless Solar IP67 Security Camera System Outdoor Home Cam 1080P 2MP</a></p><p>Wondering to capture video or images from the camera using script/program. </p><p><code>ffmpeg -re -i &quot;http://host ip:81/livestream.cgi?user=admin&amp;pwd=&amp;streamid=0&quot; -c copy -f mpegts test.mp4</code></p><p><code>ffmpeg  -i &quot;http://host ip:81/livestream.cgi?user=admin&amp;pwd=a123&amp;streamid=0&quot; -c copy -f mpegts -ss 5 -frames:v 5 testt.png</code></p><p>FFMPEG is not portable, another way of using cv2 to capture a picture:<br>(ref <a href="https://stackoverflow.com/questions/28477600/not-able-to-play-h264-video-on-opencv" target="_blank" rel="noopener">Not able to play .h264 video on OpenCV?</a>)</p><pre><code class="python">cap = cv2.VideoCapture(<span class="string">'http://host:81/livestream.cgi?user=admin&amp;pwd=&amp;streamid=0'</span>)        <span class="keyword">while</span>(cap.isOpened()):            ret, frame = cap.read()            <span class="comment"># write to local file</span>            cv2.imwrite(<span class="string">"capture.png"</span>,frame)            <span class="comment"># create memory file object save to AWS S3</span>            <span class="comment">#img_data = io.BytesIO(cv2.imencode('.png', frame)[1])</span>            <span class="keyword">break</span>        cap.release()</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Got a Solar WiFi IP camera from &lt;a href=&quot;https://www.ebay.com.au/itm/302918525683?ul_noapp=true&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Wireless 
       
     
     </summary>
