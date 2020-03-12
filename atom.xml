@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jevy.wang/"/>
-  <updated>2020-03-12T05:28:56.016Z</updated>
+  <updated>2020-03-12T05:32:40.301Z</updated>
   <id>https://jevy.wang/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://jevy.wang/post/hello-world.html"/>
-    <id>https://jevy.wang/post/hello-world.html</id>
-    <published>2020-03-12T05:28:56.016Z</published>
-    <updated>2020-03-12T05:28:56.016Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>Translante IDL script to python</title>
@@ -140,32 +119,6 @@
   
   <entry>
     <title>IP Camera BAT 310 Hacking</title>
-    <link href="https://jevy.wang/post/2019-09-11-i-post-goaccess-analysis-k8s-nginx-log.html"/>
-    <id>https://jevy.wang/post/2019-09-11-i-post-goaccess-analysis-k8s-nginx-log.html</id>
-    <published>2020-03-12T05:13:24.381Z</published>
-    <updated>2020-03-12T05:32:40.300Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Software"><a href="#Software" class="headerlink" title="Software"></a>Software</h2><ul><li>use this document to update goaccess to the latest version: <a href="https://goaccess.io/download" target="_blank" rel="noopener">https://goaccess.io/download</a></li><li>use this document to find the suitable log format: <a href="https://github.com/allinurl/goaccess/blob/master/config/goaccess.conf" target="_blank" rel="noopener">https://github.com/allinurl/goaccess/blob/master/config/goaccess.conf</a></li><li>install jq linux tool</li><li><h2 id="Analysis-K8S-nginx-log"><a href="#Analysis-K8S-nginx-log" class="headerlink" title="Analysis K8S nginx log"></a>Analysis K8S nginx log</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find */* -<span class="built_in">type</span> f  -<span class="built_in">exec</span> jq <span class="string">".textPayload"</span> \&#123;\&#125; \; | goaccess --<span class="built_in">log</span>-format=<span class="string">'%^ %^ [%h] %^ %^ [%d:%t %^] \"%r\" %^ %b \"%R\" \"%u\" %^ %^ [%v] %^:%^ %^ %T %^ %^'</span> --date-format=%d/%b/%Y --time-format=%H:%M:%S - --with-output-resolver -o out.html</span><br></pre></td></tr></table></figure></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Software&quot;&gt;&lt;a href=&quot;#Software&quot; class=&quot;headerlink&quot; title=&quot;Software&quot;&gt;&lt;/a&gt;Software&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;use this document to update goaccess to 
-      
-    
-    </summary>
-    
-      <category term="timeline" scheme="https://jevy.wang/categories/timeline/"/>
-    
-    
-      <category term="article" scheme="https://jevy.wang/tags/article/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IP Camera BAT 310 Hacking</title>
     <link href="https://jevy.wang/post/2019-09-11-i-post-get-data-from-google-storage.html"/>
     <id>https://jevy.wang/post/2019-09-11-i-post-get-data-from-google-storage.html</id>
     <published>2020-03-12T05:13:24.381Z</published>
@@ -179,6 +132,32 @@
       
         &lt;h2 id=&quot;Software&quot;&gt;&lt;a href=&quot;#Software&quot; class=&quot;headerlink&quot; title=&quot;Software&quot;&gt;&lt;/a&gt;Software&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Install gcloud with gsutil included&lt;/li&gt;
+      
+    
+    </summary>
+    
+      <category term="timeline" scheme="https://jevy.wang/categories/timeline/"/>
+    
+    
+      <category term="article" scheme="https://jevy.wang/tags/article/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IP Camera BAT 310 Hacking</title>
+    <link href="https://jevy.wang/post/2019-09-11-i-post-goaccess-analysis-k8s-nginx-log.html"/>
+    <id>https://jevy.wang/post/2019-09-11-i-post-goaccess-analysis-k8s-nginx-log.html</id>
+    <published>2020-03-12T05:13:24.381Z</published>
+    <updated>2020-03-12T05:32:40.300Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Software"><a href="#Software" class="headerlink" title="Software"></a>Software</h2><ul><li>use this document to update goaccess to the latest version: <a href="https://goaccess.io/download" target="_blank" rel="noopener">https://goaccess.io/download</a></li><li>use this document to find the suitable log format: <a href="https://github.com/allinurl/goaccess/blob/master/config/goaccess.conf" target="_blank" rel="noopener">https://github.com/allinurl/goaccess/blob/master/config/goaccess.conf</a></li><li>install jq linux tool</li><li><h2 id="Analysis-K8S-nginx-log"><a href="#Analysis-K8S-nginx-log" class="headerlink" title="Analysis K8S nginx log"></a>Analysis K8S nginx log</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find */* -<span class="built_in">type</span> f  -<span class="built_in">exec</span> jq <span class="string">".textPayload"</span> \&#123;\&#125; \; | goaccess --<span class="built_in">log</span>-format=<span class="string">'%^ %^ [%h] %^ %^ [%d:%t %^] \"%r\" %^ %b \"%R\" \"%u\" %^ %^ [%v] %^:%^ %^ %T %^ %^'</span> --date-format=%d/%b/%Y --time-format=%H:%M:%S - --with-output-resolver -o out.html</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Software&quot;&gt;&lt;a href=&quot;#Software&quot; class=&quot;headerlink&quot; title=&quot;Software&quot;&gt;&lt;/a&gt;Software&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;use this document to update goaccess to 
       
     
     </summary>
@@ -248,36 +227,11 @@
   </entry>
   
   <entry>
-    <title>Read H264 livestream using ffmpeg and cv2</title>
-    <link href="https://jevy.wang/post/2019-02-28-i-post-read-h264-livestream.html"/>
-    <id>https://jevy.wang/post/2019-02-28-i-post-read-h264-livestream.html</id>
-    <published>2020-03-12T05:13:24.378Z</published>
-    <updated>2020-03-12T05:32:40.293Z</updated>
-    
-    <content type="html"><![CDATA[<p>Got a Solar WiFi IP camera from <a href="https://www.ebay.com.au/itm/302918525683?ul_noapp=true" target="_blank" rel="noopener">Wireless Solar IP67 Security Camera System Outdoor Home Cam 1080P 2MP</a></p><p>Wondering to capture video or images from the camera using script/program. </p><p><code>ffmpeg -re -i &quot;http://host ip:81/livestream.cgi?user=admin&amp;pwd=&amp;streamid=0&quot; -c copy -f mpegts test.mp4</code></p><p><code>ffmpeg  -i &quot;http://host ip:81/livestream.cgi?user=admin&amp;pwd=a123&amp;streamid=0&quot; -c copy -f mpegts -ss 5 -frames:v 5 testt.png</code></p><p>FFMPEG is not portable, another way of using cv2 to capture a picture:<br>(ref <a href="https://stackoverflow.com/questions/28477600/not-able-to-play-h264-video-on-opencv" target="_blank" rel="noopener">Not able to play .h264 video on OpenCV?</a>)</p><pre><code class="python">cap = cv2.VideoCapture(<span class="string">'http://host:81/livestream.cgi?user=admin&amp;pwd=&amp;streamid=0'</span>)        <span class="keyword">while</span>(cap.isOpened()):            ret, frame = cap.read()            <span class="comment"># write to local file</span>            cv2.imwrite(<span class="string">"capture.png"</span>,frame)            <span class="comment"># create memory file object save to AWS S3</span>            <span class="comment">#img_data = io.BytesIO(cv2.imencode('.png', frame)[1])</span>            <span class="keyword">break</span>        cap.release()</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Got a Solar WiFi IP camera from &lt;a href=&quot;https://www.ebay.com.au/itm/302918525683?ul_noapp=true&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Wireless 
-      
-    
-    </summary>
-    
-      <category term="timeline" scheme="https://jevy.wang/categories/timeline/"/>
-    
-    
-      <category term="article" scheme="https://jevy.wang/tags/article/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Package AWS Lambda function</title>
     <link href="https://jevy.wang/post/2019-02-28-i-post-package-aws-lambda.html"/>
     <id>https://jevy.wang/post/2019-02-28-i-post-package-aws-lambda.html</id>
     <published>2020-03-12T05:13:24.378Z</published>
-    <updated>2020-03-12T05:32:40.293Z</updated>
+    <updated>2020-03-12T05:56:07.577Z</updated>
     
     <content type="html"><![CDATA[<ul><li>Install/start Docker </li><li>Install python3</li><li>Install nodejs (npm included)</li><li>Install serverless: npm install -g serverless</li><li>Install virtualenv of python pip install virtualenv</li></ul><p>Create Serverless project</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">serverless create   --template aws-python3  --name project-name  --path project-path</span><br></pre></td></tr></table></figure><p>Active virtualenv at project directory:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">virtualenv venv --python=python3</span><br><span class="line"># On Windows</span><br><span class="line">.\venv\Script\activate</span><br><span class="line"># On Linux</span><br><span class="line">source venv/bin/activate</span><br></pre></td></tr></table></figure><p>Install python package and code as usual in python virtual environment</p><p>Freeze python package to requirements.txt<br><code>pip freeze &gt; requirements.txt</code></p><p>Install <code>serverless-python-requirements</code> and config the plugin at serverless.yml</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install --save serverless-python-requirements</span><br><span class="line">`</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">service: project-name # NOTE: update this with your service name</span><br><span class="line">provider:</span><br><span class="line">  name: aws</span><br><span class="line">  runtime: python3.6</span><br><span class="line">  region: aws-reagon</span><br><span class="line">  role: aws-iam-role-with-the-privilidge-to-create-lambda-function</span><br><span class="line">plugins:</span><br><span class="line">  - serverless-python-requirements</span><br><span class="line"># you can add packaging information here</span><br><span class="line">package:</span><br><span class="line">  exclude:</span><br><span class="line">     - vent/**</span><br><span class="line"></span><br><span class="line">functions:</span><br><span class="line">  hello:</span><br><span class="line">    handler: handler.hello</span><br><span class="line">    events:</span><br><span class="line">      - http:</span><br><span class="line">          path: hello</span><br><span class="line">          method: get</span><br><span class="line">          cors: true</span><br><span class="line">          integration: LAMBDA</span><br><span class="line">      - schedule: rate(1 hour)</span><br></pre></td></tr></table></figure><p>Deploy to AWS:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">serverless deploy</span><br></pre></td></tr></table></figure><p>Useful tools:</p><ul><li>serverless logs –function hello #check last log</li><li>serverless invoke -f hello –log #invoke the function</li></ul>]]></content>
     
@@ -298,6 +252,51 @@
     
     
       <category term="article" scheme="https://jevy.wang/tags/article/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Read H264 livestream using ffmpeg and cv2</title>
+    <link href="https://jevy.wang/post/2019-02-28-i-post-read-h264-livestream.html"/>
+    <id>https://jevy.wang/post/2019-02-28-i-post-read-h264-livestream.html</id>
+    <published>2020-03-12T05:13:24.378Z</published>
+    <updated>2020-03-12T05:56:13.243Z</updated>
+    
+    <content type="html"><![CDATA[<p>Got a Solar WiFi IP camera from <a href="https://www.ebay.com.au/itm/302918525683?ul_noapp=true" target="_blank" rel="noopener">Wireless Solar IP67 Security Camera System Outdoor Home Cam 1080P 2MP</a></p><p>Wondering to capture video or images from the camera using script/program. </p><p><code>ffmpeg -re -i &quot;http://host ip:81/livestream.cgi?user=admin&amp;pwd=&amp;streamid=0&quot; -c copy -f mpegts test.mp4</code></p><p><code>ffmpeg  -i &quot;http://host ip:81/livestream.cgi?user=admin&amp;pwd=a123&amp;streamid=0&quot; -c copy -f mpegts -ss 5 -frames:v 5 testt.png</code></p><p>FFMPEG is not portable, another way of using cv2 to capture a picture:<br>(ref <a href="https://stackoverflow.com/questions/28477600/not-able-to-play-h264-video-on-opencv" target="_blank" rel="noopener">Not able to play .h264 video on OpenCV?</a>)</p><pre><code class="python">cap = cv2.VideoCapture(<span class="string">'http://host:81/livestream.cgi?user=admin&amp;pwd=&amp;streamid=0'</span>)        <span class="keyword">while</span>(cap.isOpened()):            ret, frame = cap.read()            <span class="comment"># write to local file</span>            cv2.imwrite(<span class="string">"capture.png"</span>,frame)            <span class="comment"># create memory file object save to AWS S3</span>            <span class="comment">#img_data = io.BytesIO(cv2.imencode('.png', frame)[1])</span>            <span class="keyword">break</span>        cap.release()</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Got a Solar WiFi IP camera from &lt;a href=&quot;https://www.ebay.com.au/itm/302918525683?ul_noapp=true&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Wireless 
+      
+    
+    </summary>
+    
+      <category term="timeline" scheme="https://jevy.wang/categories/timeline/"/>
+    
+    
+      <category term="article" scheme="https://jevy.wang/tags/article/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>About Me</title>
+    <link href="https://jevy.wang/post/about.html"/>
+    <id>https://jevy.wang/post/about.html</id>
+    <published>2020-03-03T00:51:24.000Z</published>
+    <updated>2020-03-12T05:55:28.201Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Jevy-Wang"><a href="#Jevy-Wang" class="headerlink" title="Jevy Wang"></a>Jevy Wang</h2>]]></content>
+    
+    <summary type="html">
+    
+      Me
+    
+    </summary>
+    
+    
+      <category term="About Me" scheme="https://jevy.wang/tags/About-Me/"/>
     
   </entry>
   
