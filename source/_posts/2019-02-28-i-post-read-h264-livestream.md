@@ -3,6 +3,7 @@ title: Read H264 livestream using ffmpeg and cv2
 dd: readh264
 category: timeline
 tags: article
+image: img/
 ---
 
 Got a Solar WiFi IP camera from <a href="https://www.ebay.com.au/itm/302918525683?ul_noapp=true">Wireless Solar IP67 Security Camera System Outdoor Home Cam 1080P 2MP</a>

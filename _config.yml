@@ -6,7 +6,7 @@ title: Jevy Wang's Blog
 keyword: Blog, Technique, Software Engineer
 description: Jevy Wang's Blog
 author: Jevy Wang
-language: en
+language: en-AU
 
 url: https://jevy.wang
 root: /
@@ -37,11 +37,11 @@ deploy:
   branch: master
 
 gitalk:
-  client_id: 'c1fdd456a4caae5f7df0'
-  client_secret: 'b2674451e21feae50520f99337ec15d2aebe7879'
-  accessToken: 'xxxx'
-  repo: 'hexo-theme-geektutu'
-  owner: 'geektutu'
+  client_id: '49c71eefb8ae6da95883'
+  client_secret: 'b277e08a331252d00cf0c38a0e8dd5cc4646701a'
+  accessToken: '466c496e1f85a390997f32e24b3aef78246925cf '
+  repo: 'jevy-wangfei.github.io'
+  owner: 'jevy-wangfei'
 
 # alipay wechatpay 的二维码转换的网址，不使用二维码图片，提高加载速率。
 # https://cli.im/deqr 可将二维码转为网址
